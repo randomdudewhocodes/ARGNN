@@ -112,10 +112,9 @@ void NeuralNetwork::train(const Matrix& input, const Matrix& target, int epochs,
             num_batches++;
         }
         
-        if (epoch % 100 == 0)
-            std::cout << "Epoch " << epoch 
-                      << " Average Loss: " << (epoch_loss / num_batches) 
-                      << std::endl;
+        std::cout << "Epoch " << epoch 
+                    << " Average Loss: " << (epoch_loss / num_batches) 
+                    << std::endl;
     }
 }
 
